@@ -1,4 +1,4 @@
-#Pong
+**Pong**
 
 A recreation of the classic Pong in Python
 
