@@ -1,9 +1,9 @@
-from Settings import *
+from settings import *
 from random import randint
 from time import sleep
-from Player import Player
-from Ball import Ball
-from Main_menu import MainMenu
+from player import Player
+from ball import Ball
+from main_menu import MainMenu
 
 class Game:
     def __init__(self, fullscreen):
@@ -22,9 +22,9 @@ class Game:
 
         pg.mixer.init()
 
-        self.sound_paddle = pg.mixer.Sound("ressources/audio/paddle.wav")
-        self.sound_wall = pg.mixer.Sound("ressources/audio/wall.wav")
-        self.sound_score = pg.mixer.Sound("ressources/audio/score.wav")
+        self.sound_paddle = pg.mixer.Sound("ressources/audio/paddle.mp3")
+        self.sound_wall = pg.mixer.Sound("ressources/audio/wall.mp3")
+        self.sound_score = pg.mixer.Sound("ressources/audio/score.mp3")
 
         self.clock = pg.time.Clock()
         self.max_score = 10
